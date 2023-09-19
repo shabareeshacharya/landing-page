@@ -1,0 +1,279 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+   
+    background-image: url(/images/t2.jpg);
+   
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+.back_image_overlay{
+   
+    background-color:  rgba(0,0,0,0.75);}
+
+     
+
+nav ul{
+    float: right;
+    color: aliceblue;
+
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+nav h3{
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(1, 1, 1);
+    font-size: 25px;
+    margin-top: 10px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+nav{
+   width: 90%;
+   height: 65px;
+   padding: 75px;
+   padding: 0px 100px;
+   position: fixed;
+   background-image: linear-gradient(#030303,#000);
+ }
+ nav ul li a
+ { margin-right: 10px;
+    color:#fff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+
+
+ }
+nav ul li a::after
+ {
+    content: '';
+    width:0px;
+    height:4px;
+    background:#135e20;
+    position: absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+    
+ }
+ nav ul li a:hover:after
+ {
+    width: 100%;
+    
+ }
+ nav ul li:hover{
+    transform: translateY(2px);
+ 
+}
+nav ul li a:hover{
+    color: rgba(255, 102, 0, 0.88);
+    font-size: 28px;
+    
+}
+
+   @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffffff, 0 0 10px #060606, 0 0 10px rgb(238, 85, 14), 0 0 10px rgb(238, 85, 14), 0 0 10px rgb(238, 85, 14), 0 0 10px rgb(238, 85, 14), 0 0 10px rgb(238, 85, 14);
+    }
+    
+    to {
+      text-shadow: 0 0 10px #faf8f8, 0 0 15px rgb(3, 3, 3), 0 0 10px rgb(238, 85, 14), 0 0 10px rgb(238, 85, 14), 0 0 10px rgb(238, 85, 14), 0 0 10px rgb(238, 85, 14), 0 0 10px rgb(238, 85, 14);
+    }
+  }
+
+
+  .row
+  {
+    
+    height: 100vh;
+    background-color: #04000058;
+    
+  }
+  .column-left
+  {
+    float: left;
+    margin-top: 9%;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    width: 1000px;
+    height: 200px;
+    border-radius: 73% 27% 46% 54% / 0% 98% 2% 100%  ;
+    background-color: #050505b4;
+    border-color: rgb(255, 89, 0);
+    border-style: solid;
+  }
+  .column-left  h4{
+    margin-left: 5%;
+    font-weight: 900;
+  }
+  .column-left h1 {
+    font-size: 25px;
+    margin-left: 3%;
+  }
+
+
+
+
+
+  .column-right
+  {
+
+    margin-top: 15%;    
+    width: 400px;
+    height: 100%;
+    float: right;
+  
+  }
+  .column-right a {
+    color:aqua;
+    position: fixed;
+    font-weight: 900;
+    margin-top: 2%;
+    margin-left: 45px;
+    font-size: 50px;
+    margin-bottom: 8px;
+    border-width: 20px;
+    border-top-left-radius: 20px;
+  }
+  .column-right i{
+    color: #13def4;
+    font-size: 45px;
+    margin-top: 3%;
+    margin-left: 250px;
+  }
+  .row button{
+    color: rgb(255, 175, 3);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(91, 198, 10, 0.8); 
+    font-weight: 900;
+    margin-top: 90px;
+    margin-left: 85%;
+    border-color: #f45313;
+    
+   
+
+  }
+  
+ 
+
+  
+
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height:400px; 
+    width: 700px;
+    border-radius: 0% 59% 39% 45% / 97% 39% 0% 100%   ;
+   
+    background-size: 100% 100%;
+    animation: changeImage 10s linear infinite;
+    
+    
+}
+
+
+
+
+.social-icon a{
+  text-decoration: none;
+  font-size: 80px;
+  margin-left: 75px;
+  font-weight: 900;
+  margin-top: 25px;
+  color:#d70dcd;
+  bottom: 2px;
+  left: 0%;
+  display: inline-block;
+}
+.social-icon a:hover{
+  color:#1619b8;
+  background-color: #070606;
+  transform: translateY(-5px);
+}
+.fa-phone{
+  color: #1619b8;
+}
+.fa-whatsapp{
+  color: green;
+}
+
+
+@media only screen and (max-width: 768px) {
+ 
+  nav {
+      padding: 10px;
+  }
+
+  
+}
+
+
+@media only screen and (max-width: 480px) {
+  
+}
+
+
+
+@keyframes changeImage {
+    0% {
+        background-image: url(..images/i5.jpg);
+
+    }
+   25% {
+    background-image: url(./images/i1.jpg);
+    }
+    50% {
+        background-image: url(../images/kedarnath.jpeg);
+    }
+    75% {
+        background-image: url(../images/i4.jpg);
+    }
+    100% {
+        background-image: url(../images/i5.jpg);
+    }
+    
+
+    
+}
+
+
+
+
+
+
+
+ footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(16, 7, 7);
+    color: #faf8f8;
+    text-align: center;
+font-size: medium;
+}
+
+.fa-instagram{
+    color: #e01e89;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+  
